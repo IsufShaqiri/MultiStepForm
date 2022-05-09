@@ -1,16 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link type="text/css" href="style.css" rel="stylesheet">
-        <link type="image/icon" href="./icon.svg">
-        <script src="./script.js"></script>
-    </head>
-    <body>
-        <form data-multi-step>
-            
-        </form>
-    </body>
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="style.css" rel="stylesheet">
+    <link type="image/icon" href="./icon.svg">
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <form data-multi-step>
+      <div class="card" data-step>
+        <h3 class="step-title">This is step 1</h3>
+        <div class="form-group">
+          <label for="email">Email</label> <!--This is for the email-->
+          <input type="email" name="email" id="email">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label> <!--This is for the password-->
+          <input type="password" name="password" id="password">
+          <button type="button">Next</button>
+        </div>
+      </div>
+      <div class="card" data-step>
+        <h3 class="step-title">This is step 2</h3>
+        <div class="form-group">
+          <label for="address">Address</label> <!--This is for the address-->
+          <input type="text" name="address" id="address">
+        </div>
+        <div class="form-group">
+          <label for="city">City</label> <!--This is for the city-->
+          <input type="city" name="city" id="city">
+        </div>
+        <div class="form-group">
+          <label for="zipcode">Zip Code</label> <!--This is for the zip code-->
+          <input type="text" name="zipcode" id="zipcode">
+          <button type="button">Next</button>
+          <button type="button">Previous</button>
+        </div>
+        <div class="card" data-step>
+        <h3 class="step-title">This is step 3</h3>
+        <div class="form-group">
+          <label for="firstName">First Name</label> <!--This is for the First Name-->
+          <input type="text" name="name" id="firstName">
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label> <!--This is for the Last Name-->
+          <input type="text" name="lastName" id="lastName">
+          <button type="button">Previous</button>
+          <button type="button">Submit</button>
+        </div>
+    </form>
+  </body>
 </html>
